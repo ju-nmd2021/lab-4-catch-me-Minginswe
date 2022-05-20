@@ -1,5 +1,5 @@
-import Button from "./button.js";
-import Animal from "./animal.js";
+// import Button from "./button.js";
+// import Animal from "./animal.js";
 
 let totalAnimals = 10;
 let state = "start";
@@ -23,6 +23,12 @@ function setupGame() {
       Math.floor(Math.random() * (height - animalSize * 2) + animalSize / 2)
     );
     animals.push(animal);
+
+    let cat = new Cat(
+      Math.floor(Math.random() * (width - animalSize * 2) + animalSize / 2),
+      Math.floor(Math.random() * (height - animalSize * 2) + animalSize / 2)
+    );
+    animals.push(cat);
   }
 }
 
@@ -45,7 +51,7 @@ function gameScreen() {
   noStroke();
   fill(0, 0, 0);
   textAlign(LEFT);
-  text("Animals caught: " + (totalAnimals - animals.length), 10, 30);
+  text("Animals caught: " + (totalAnimals * 2 - animals.length), 10, 30);
 
   if (animals.length === 0) {
     state = "result";
