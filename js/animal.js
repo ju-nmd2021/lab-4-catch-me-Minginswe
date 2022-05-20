@@ -1,4 +1,4 @@
-export default class Animal {
+class Animal {
   constructor(x, y) {
     this.x = x;
     this.y = y;
