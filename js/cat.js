@@ -34,19 +34,19 @@ class Cat extends Animal {
     ellipse(236, 140, 40, 45);
 
     //ears
-    stroke(250, 139, 170);
+    stroke(189, 146, 99);
     beginShape();
-    vertex(92, 160); // first point
+    vertex(92, 160);
     bezierVertex(50, 70, 40, 40, 150, 60);
     endShape();
 
     beginShape();
-    vertex(288, 160); // first point
+    vertex(288, 160);
     bezierVertex(330, 70, 340, 40, 230, 60);
     endShape();
 
-    stroke(86, 54, 33);
-    fill(246, 139, 170);
+    stroke(189, 146, 99);
+    fill(189, 146, 99);
     beginShape();
     vertex(92, 160);
     bezierVertex(60, 80, 50, 40, 140, 90);
@@ -70,7 +70,7 @@ class Cat extends Animal {
 
     //hands
     stroke(86, 54, 33);
-    fill(0);
+    fill(255, 255, 255);
     beginShape();
     vertex(190, 327);
     bezierVertex(165, 330, 165, 310, 160, 265);
@@ -78,7 +78,7 @@ class Cat extends Animal {
     line(190, 327, 190, 265);
 
     stroke(86, 54, 33);
-    fill(0);
+    fill(255, 255, 255);
     beginShape();
     vertex(192, 322);
     bezierVertex(210, 340, 220, 320, 225, 265);
@@ -90,7 +90,7 @@ class Cat extends Animal {
     triangle(88, 275, 116, 272, 100, 272);
     triangle(89, 278, 120, 310, 116, 276);
     triangle(126, 290, 123, 300, 116, 276);
-    stroke(86, 54, 33);
+    stroke(0);
     arc(100, 270, 30, 30, (4 * PI) / 4, 0);
 
     beginShape();
@@ -99,7 +99,7 @@ class Cat extends Animal {
     30;
 
     fill(245, 216, 121);
-    stroke(86, 60, 33);
+    stroke(0);
     beginShape();
     vertex(120, 275);
     bezierVertex(118, 272, 120, 290, 130, 290);
