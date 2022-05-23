@@ -24,6 +24,7 @@ function setupGame() {
     );
     animals.push(animal);
 
+    //add the cat object // go through the cats
     let cat = new Cat(
       Math.floor(Math.random() * (width - animalSize * 2) + animalSize / 2),
       Math.floor(Math.random() * (height - animalSize * 2) + animalSize / 2)
@@ -50,7 +51,7 @@ function gameScreen() {
   textSize(20);
   noStroke();
   fill(0, 0, 0);
-  textAlign(LEFT);
+  textAlign(LEFT); // changed here
   text("Animals caught: " + (totalAnimals * 2 - animals.length), 10, 30);
 
   if (animals.length === 0) {
